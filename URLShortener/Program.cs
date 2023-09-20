@@ -40,7 +40,7 @@ IResult Result(ServiceResponse serviceResponse, HttpContext httpContext)
     return Results.BadRequest(serviceResponse);
 }
 
-app.MapPost("/Shorter", async (string originalUrl,
+app.MapPost("/UrlShorter", async (string originalUrl,
     IUrlShortenerService urlShortenerService,
     HttpContext httpContext) =>
 {
